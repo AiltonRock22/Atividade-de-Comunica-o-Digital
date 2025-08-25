@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade: Comunicação no Mundo Digital</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        
+        :root {
+            --primary: #2563eb;
+            --primary-dark: #1d4ed8;
+            --secondary: #3b82f6;
+            --accent: #f59e0b;
+            --light: #f3f4f6;
+            --dark: #1f2937;
+            --darker: #111827;
+        }
+        
+        body {
+            background-color: var(--light);
+            color: var(--darker);
+            line-height: 1.6;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+            color: white;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 0 0 10px 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 30px;
+        }
+        
+        .logo {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+        
+        .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+        
+        .card {
+            background-color: white;
+            border-radius: 10px;
+            padding: 25px;
+            margin-bottom: 25px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+        }
+        
+        .card-title {
+            font-size: 1.5rem;
+            color: var(--primary);
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+        }
+        
+        .card-title i {
+            margin-right: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: 600;
+            margin-top: 15px;
+            transition: background-color 0.3s;
+        }
+        
+        .btn:hover {
+            background-color: var(--primary-dark);
+        }
+        
+        .btn-accent {
+            background-color: var(--accent);
+        }
+        
+        .btn-accent:hover {
+            background-color: #e69008;
+        }
+        
+        .link-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        
+        .link-item {
+            display: flex;
+            align-items: center;
+            padding: 15px;
+            background-color: #f8fafc;
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--dark);
+            transition: all 0.3s;
+            border-left: 4px solid var(--primary);
+        }
+        
+        .link-item:hover {
+            background-color: #eef2ff;
+            transform: translateX(5px);
+        }
+        
+        .link-item i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: var(--primary);
+        }
+        
+        .link-text {
+            flex-grow: 1;
+        }
+        
+        .link-title {
+            font-weight: 600;
+            margin-bottom: 5px;
+        }
+        
+        .link-desc {
+            font-size: 0.9rem;
+            color: #64748b;
+        }
+        
+        .instructions {
+            background-color: #eff6ff;
+            padding: 15px;
+            border-radius: 8px;
+            margin: 15px 0;
+        }
+        
+        .step {
+            display: flex;
+            margin-bottom: 15px;
+        }
+        
+        .step-number {
+            background-color: var(--primary);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 15px;
+            flex-shrink: 0;
+        }
+        
+        .step-content {
+            flex-grow: 1;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            margin-top: 40px;
+            color: #64748b;
+            border-top: 1px solid #e5e7eb;
+        }
+        
+        @media (max-width: 768px) {
+            .link-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .subtitle {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">Comunicação Digital</div>
+            <div class="subtitle">Atividade do 3º Bimestre - Construindo Mensagens Convincentes</div>
+        </div>
+    </header>
+    
+    <div class="container">
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-info-circle"></i> Sobre a Atividade</h2>
+            <p>Nesta atividade, vamos explorar como a comunicação funciona no mundo digital e aprender a construir mensagens convincentes. Vocês trabalharão em equipes para criar uma agência de comunicação digital.</p>
+            
+            <div class="instructions">
+                <h3>Como funciona:</h3>
+                <div class="step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">Formem equipes de 4-5 pessoas e criem uma "agência"</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">Analisem exemplos de campanhas digitais de sucesso</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">Desenvolvam uma campanha para um produto/conceito real</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">Criem peças para diferentes plataformas digitais</div>
+                </div>
+                <div class="step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">Apresentem sua campanha para a turma</div>
+                </div>
+            </div>
+            
+            <a href="#form-link" class="btn">Acessar Formulário da Atividade</a>
+        </div>
+        
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-link"></i> Links Úteis</h2>
+            <p>Utilizem esses recursos como base para pesquisa e inspiração para a atividade:</p>
+            
+            <div class="link-grid">
+                <a href="https://www.canva.com/" class="link-item" target="_blank">
+                    <i class="fab fa-canva"></i>
+                    <div class="link-text">
+                        <div class="link-title">Canva</div>
+                        <div class="link-desc">Ferramenta para criação de designs</div>
+                    </div>
+                </a>
+                
+                <a href="https://trello.com/" class="link-item" target="_blank">
+                    <i class="fab fa-trello"></i>
+                    <div class="link-text">
+                        <div class="link-title">Trello</div>
+                        <div class="link-desc">Organização de tarefas em equipe</div>
+                    </div>
+                </a>
+                
+                <a href="https://www.google.com/drive/" class="link-item" target="_blank">
+                    <i class="fab fa-google-drive"></i>
+                    <div class="link-text">
+                        <div class="link-title">Google Drive</div>
+                        <div class="link-desc">Armazenamento e colaboração</div>
+                    </div>
+                </a>
+                
+                <a href="https://coolors.co/" class="link-item" target="_blank">
+                    <i class="fas fa-palette"></i>
+                    <div class="link-text">
+                        <div class="link-title">Coolors</div>
+                        <div class="link-desc">Gerador de paletas de cores</div>
+                    </div>
+                </a>
+                
+                <a href="https://www.youtube.com/playlist?list=PLTC3g3PYNKUuFq4Cw2e3mQJX4iCk8I0qy" class="link-item" target="_blank">
+                    <i class="fab fa-youtube"></i>
+                    <div class="link-text">
+                        <div class="link-title">Exemplos de Campanhas</div>
+                        <div class="link-desc">Vídeos com cases de sucesso</div>
+                    </div>
+                </a>
+                
+                <a href="https://www.slideshare.net/" class="link-item" target="_blank">
+                    <i class="fas fa-presentation"></i>
+                    <div class="link-text">
+                        <div class="link-title">SlideShare</div>
+                        <div class="link-desc">Apresentações sobre comunicação digital</div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+        <div class="card" id="form-link">
+            <h2 class="card-title"><i class="fas fa-edit"></i> Formulário da Atividade</h2>
+            <p>Preencham este formulário para registrar as informações da sua agência e o planejamento da campanha:</p>
+            
+            <div class="instructions">
+                <p><strong>Instruções:</strong> Cada equipe deve preencher o formulário até a data estabelecida. Lembrem-se de discutir as respostas em grupo antes de enviar.</p>
+            </div>
+            
+            <a href="https://forms.google.com" class="btn btn-accent" target="_blank">Acessar Formulário</a>
+        </div>
+        
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-calendar-alt"></i> Cronograma</h2>
+            <p>Datas importantes para a atividade:</p>
+            
+            <div class="instructions">
+                <p><strong>Primeira aula:</strong> Apresentação da atividade, formação das equipes e início da pesquisa</p>
+                <p><strong>Entrega do formulário:</strong> [inserir data]</p>
+                <p><strong>Segunda aula:</strong> Desenvolvimento das campanhas e apresentações</p>
+                <p><strong>Data final:</strong> [inserir data] - Envio de todos os materiais produzidos</p>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <div class="container">
+            <p>Atividade de Comunicação no Mundo Digital - 3º Bimestre</p>
+            <p>Professor(a): [Seu Nome] - [Disciplina]</p>
+        </div>
+    </footer>
+</body>
+</html>
