@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atividade: Comunicação no Mundo Digital</title>
+    <title>Filosofia e Juventude na Era Digital - Dissertação de Mestrado</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
@@ -21,6 +21,7 @@
             --light: #f3f4f6;
             --dark: #1f2937;
             --darker: #111827;
+            --accent-dark: #d97706;
         }
         
         body {
@@ -54,6 +55,15 @@
         .subtitle {
             font-size: 1.2rem;
             opacity: 0.9;
+            margin-bottom: 10px;
+        }
+        
+        .dissertation-info {
+            background-color: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 8px;
+            margin-top: 20px;
+            font-size: 0.9rem;
         }
         
         .card {
@@ -92,6 +102,8 @@
             font-weight: 600;
             margin-top: 15px;
             transition: background-color 0.3s;
+            border: none;
+            cursor: pointer;
         }
         
         .btn:hover {
@@ -103,7 +115,7 @@
         }
         
         .btn-accent:hover {
-            background-color: #e69008;
+            background-color: var(--accent-dark);
         }
         
         .link-grid {
@@ -179,6 +191,19 @@
             flex-grow: 1;
         }
         
+        .research-highlights {
+            background-color: #fffbeb;
+            border-left: 4px solid var(--accent);
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        
+        .research-highlights h3 {
+            color: var(--accent-dark);
+            margin-bottom: 10px;
+        }
+        
         footer {
             text-align: center;
             padding: 30px 0;
@@ -187,8 +212,28 @@
             border-top: 1px solid #e5e7eb;
         }
         
+        .form-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+        
+        .form-item {
+            background-color: #f0f9ff;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+            border: 1px solid #bae6fd;
+        }
+        
+        .form-item h3 {
+            color: var(--primary);
+            margin-bottom: 10px;
+        }
+        
         @media (max-width: 768px) {
-            .link-grid {
+            .link-grid, .form-grid {
                 grid-template-columns: 1fr;
             }
             
@@ -205,126 +250,155 @@
 <body>
     <header>
         <div class="container">
-            <div class="logo">Comunicação Digital</div>
-            <div class="subtitle">Atividade do 3º Bimestre - Construindo Mensagens Convincentes</div>
+            <div class="logo">Filosofia e Juventude na Era Digital</div>
+            <div class="subtitle">Dissertação de Mestrado em Filosofia - UNIMONTES</div>
+            <div class="subtitle">Prof. Ailton Carlos Santos Motta</div>
+            
+            <div class="dissertation-info">
+                <p>Pesquisa sobre cibercultura, educação filosófica e os desafios da comunicação digital para a juventude</p>
+                <p>Orientadora: Profa. Dra. Alice Medrado</p>
+            </div>
         </div>
     </header>
     
     <div class="container">
         <div class="card">
-            <h2 class="card-title"><i class="fas fa-info-circle"></i> Sobre a Atividade</h2>
-            <p>Nesta atividade, vamos explorar como a comunicação funciona no mundo digital e aprender a construir mensagens convincentes. Vocês trabalharão em equipes para criar uma agência de comunicação digital.</p>
+            <h2 class="card-title"><i class="fas fa-info-circle"></i> Sobre a Pesquisa</h2>
+            <p>Esta página reúne os materiais e formulários da pesquisa de dissertação "Filosofia e Juventude na Era Digital: Compreensão, Reflexão e Desafios", desenvolvida no Mestrado Profissional em Filosofia da UNIMONTES.</p>
+            
+            <div class="research-highlights">
+                <h3>Foco da Pesquisa</h3>
+                <p>Analisar o impacto da cibercultura na educação filosófica e desenvolver estratégias pedagógicas para o ensino de filosofia no contexto digital, com base nas teorias de Pierre Lévy sobre virtualidade e cibercultura.</p>
+            </div>
             
             <div class="instructions">
-                <h3>Como funciona:</h3>
+                <h3>Objetivos da Atividade:</h3>
                 <div class="step">
                     <div class="step-number">1</div>
-                    <div class="step-content">Formem equipes de 4-5 pessoas e criem uma "agência"</div>
+                    <div class="step-content">Explorar a relação entre filosofia e cibercultura</div>
                 </div>
                 <div class="step">
                     <div class="step-number">2</div>
-                    <div class="step-content">Analisem exemplos de campanhas digitais de sucesso</div>
+                    <div class="step-content">Refletir sobre os desafios éticos da comunicação digital</div>
                 </div>
                 <div class="step">
                     <div class="step-number">3</div>
-                    <div class="step-content">Desenvolvam uma campanha para um produto/conceito real</div>
+                    <div class="step-content">Desenvolver habilidades de análise crítica sobre conteúdo digital</div>
                 </div>
                 <div class="step">
                     <div class="step-number">4</div>
-                    <div class="step-content">Criem peças para diferentes plataformas digitais</div>
-                </div>
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">Apresentem sua campanha para a turma</div>
+                    <div class="step-content">Criar mensagens convincentes no ambiente digital</div>
                 </div>
             </div>
-            
-            <a href="#form-link" class="btn">Acessar Formulário da Atividade</a>
         </div>
         
         <div class="card">
-            <h2 class="card-title"><i class="fas fa-link"></i> Links Úteis</h2>
-            <p>Utilizem esses recursos como base para pesquisa e inspiração para a atividade:</p>
+            <h2 class="card-title"><i class="fas fa-edit"></i> Formulários da Pesquisa</h2>
+            <p>Abaixo estão os formulários para participação na atividade de pesquisa. Sua contribuição é fundamental para o desenvolvimento deste trabalho.</p>
+            
+            <div class="form-grid">
+                <div class="form-item">
+                    <h3>Formulário Inicial</h3>
+                    <p>Questionário sobre hábitos digitais e relação com a filosofia</p>
+                    <a href="https://forms.google.com" class="btn" target="_blank">Acessar Formulário</a>
+                </div>
+                
+                <div class="form-item">
+                    <h3>Formulário de Atividade</h3>
+                    <p>Registro da participação na atividade em grupo</p>
+                    <a href="#form2" class="btn">Em Breve</a>
+                </div>
+                
+                <div class="form-item">
+                    <h3>Avaliação Final</h3>
+                    <p>Feedback sobre a experiência de aprendizagem</p>
+                    <a href="#form3" class="btn">Em Breve</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-link"></i> Recursos e Materiais</h2>
+            <p>Materiais de apoio para compreensão dos conceitos trabalhados na pesquisa:</p>
             
             <div class="link-grid">
-                <a href="https://www.canva.com/" class="link-item" target="_blank">
+                <a href="https://www.canva.com/brand/join?token=0AULOLPrqAfdWeapmfKtSg&brandingVariant=edu&invitationDestinationType=group" class="link-item" target="_blank">
                     <i class="fab fa-canva"></i>
                     <div class="link-text">
-                        <div class="link-title">Canva</div>
-                        <div class="link-desc">Ferramenta para criação de designs</div>
+                        <div class="link-title">Canva da Pesquisa</div>
+                        <div class="link-desc">Materiais visuais e apresentações</div>
                     </div>
                 </a>
                 
-                <a href="https://trello.com/" class="link-item" target="_blank">
-                    <i class="fab fa-trello"></i>
+                <a href="https://ciberpensamentos.blogspot.com/" class="link-item" target="_blank">
+                    <i class="fas fa-blog"></i>
                     <div class="link-text">
-                        <div class="link-title">Trello</div>
-                        <div class="link-desc">Organização de tarefas em equipe</div>
-                    </div>
-                </a>
-                
-                <a href="https://www.google.com/drive/" class="link-item" target="_blank">
-                    <i class="fab fa-google-drive"></i>
-                    <div class="link-text">
-                        <div class="link-title">Google Drive</div>
-                        <div class="link-desc">Armazenamento e colaboração</div>
-                    </div>
-                </a>
-                
-                <a href="https://coolors.co/" class="link-item" target="_blank">
-                    <i class="fas fa-palette"></i>
-                    <div class="link-text">
-                        <div class="link-title">Coolors</div>
-                        <div class="link-desc">Gerador de paletas de cores</div>
+                        <div class="link-title">Blog da Pesquisa</div>
+                        <div class="link-desc">Textos, reflexões e recursos</div>
                     </div>
                 </a>
                 
                 <a href="https://www.youtube.com/playlist?list=PLTC3g3PYNKUuFq4Cw2e3mQJX4iCk8I0qy" class="link-item" target="_blank">
                     <i class="fab fa-youtube"></i>
                     <div class="link-text">
-                        <div class="link-title">Exemplos de Campanhas</div>
-                        <div class="link-desc">Vídeos com cases de sucesso</div>
+                        <div class="link-title">Playlist de Vídeos</div>
+                        <div class="link-desc">Conteúdos sobre cibercultura e filosofia</div>
                     </div>
                 </a>
                 
-                <a href="https://www.slideshare.net/" class="link-item" target="_blank">
-                    <i class="fas fa-presentation"></i>
+                <a href="https://drive.google.com" class="link-item" target="_blank">
+                    <i class="fab fa-google-drive"></i>
                     <div class="link-text">
-                        <div class="link-title">SlideShare</div>
-                        <div class="link-desc">Apresentações sobre comunicação digital</div>
+                        <div class="link-title">Documentos da Pesquisa</div>
+                        <div class="link-desc">Artigos, textos e materiais de apoio</div>
+                    </div>
+                </a>
+                
+                <a href="https://pt.wikipedia.org/wiki/Pierre_L%C3%A9vy" class="link-item" target="_blank">
+                    <i class="fas fa-user-graduate"></i>
+                    <div class="link-text">
+                        <div class="link-title">Pierre Lévy</div>
+                        <div class="link-desc">Referência teórica principal</div>
+                    </div>
+                </a>
+                
+                <a href="https://www.scielo.br/j/ciedu/a/Cp4ZWjZLTRqbfGRsjvpqxbr/" class="link-item" target="_blank">
+                    <i class="fas fa-book"></i>
+                    <div class="link-text">
+                        <div class="link-title">Artigos Científicos</div>
+                        <div class="link-desc">Base teórica da pesquisa</div>
                     </div>
                 </a>
             </div>
         </div>
         
-        <div class="card" id="form-link">
-            <h2 class="card-title"><i class="fas fa-edit"></i> Formulário da Atividade</h2>
-            <p>Preencham este formulário para registrar as informações da sua agência e o planejamento da campanha:</p>
+        <div class="card">
+            <h2 class="card-title"><i class="fas fa-calendar-alt"></i> Cronograma e Prazos</h2>
+            <p>Datas importantes para o desenvolvimento da pesquisa e atividades:</p>
             
             <div class="instructions">
-                <p><strong>Instruções:</strong> Cada equipe deve preencher o formulário até a data estabelecida. Lembrem-se de discutir as respostas em grupo antes de enviar.</p>
+                <p><strong>Primeira fase:</strong> Preenchimento do formulário inicial e formação dos grupos</p>
+                <p><strong>Segunda fase:</strong> Desenvolvimento das atividades em equipe</p>
+                <p><strong>Terceira fase:</strong> Apresentação dos trabalhos e preenchimento do formulário final</p>
+                <p><strong>Data limite para participação:</strong> [inserir data]</p>
             </div>
-            
-            <a href="https://forms.google.com" class="btn btn-accent" target="_blank">Acessar Formulário</a>
         </div>
         
         <div class="card">
-            <h2 class="card-title"><i class="fas fa-calendar-alt"></i> Cronograma</h2>
-            <p>Datas importantes para a atividade:</p>
+            <h2 class="card-title"><i class="fas fa-graduation-cap"></i> Sobre o Pesquisador</h2>
+            <p><strong>Ailton Carlos Santos Motta</strong> é mestrando no Programa de Mestrado Profissional em Filosofia da Universidade Estadual de Montes Claros (UNIMONTES), desenvolvendo pesquisa sobre os desafios e oportunidades do ensino de filosofia na era digital.</p>
             
-            <div class="instructions">
-                <p><strong>Primeira aula:</strong> Apresentação da atividade, formação das equipes e início da pesquisa</p>
-                <p><strong>Entrega do formulário:</strong> [inserir data]</p>
-                <p><strong>Segunda aula:</strong> Desenvolvimento das campanhas e apresentações</p>
-                <p><strong>Data final:</strong> [inserir data] - Envio de todos os materiais produzidos</p>
-            </div>
+            <p>Professor da rede estadual de ensino, com experiência em integrar tecnologias digitais ao ensino de filosofia, buscando aproximar o conteúdo filosófico da realidade digital dos estudantes.</p>
+            
+            <a href="mailto:seuemail@email.com" class="btn btn-accent">Entrar em Contato</a>
         </div>
     </div>
     
     <footer>
         <div class="container">
-            <p>Atividade de Comunicação no Mundo Digital - 3º Bimestre</p>
-            <p>Professor(a): [Seu Nome] - [Disciplina]</p>
+            <p>Dissertação de Mestrado: "Filosofia e Juventude na Era Digital: Compreensão, Reflexão e Desafios"</p>
+            <p>Universidade Estadual de Montes Claros - Mestrado Profissional em Filosofia</p>
+            <p>Orientadora: Profa. Dra. Alice Medrado</p>
         </div>
     </footer>
 </body>
